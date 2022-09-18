@@ -1,0 +1,2 @@
+# MineStrona
+Moja Strona
