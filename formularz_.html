@@ -1,12 +1,62 @@
-﻿<!DOCTYPE html>
-     <html lang="pl-PL">
-     <html>
-	<head>
-	             <meta charset="utf-8">
-		<title> formularz_Augustyniak </title>
-	  </head>
-	   <body>
-index
-<A HREF= "index.html">wróć</A>
-	   </body>
+<!DOCTYPE html>
+<html lang="pl-PL">
+<html>
+<head>
+<meta charset="utf-8">
+<title> FormularzAugustyniak </title>
+</head>
+<body bgcolor="#E5F993">
+<center><h1> Formularz projekt</h1></center>
+<TABLE>
+<TR height="100">
+<TD width="500">
+<b>Imie:</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie" size="22">
+<br><br>
+<b>Drugie imie:</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp <input name="drugie" size="22">
+<br><br>
+<b>Nazwisko: </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="nazwisko" size="22">
+<br><br>
+<b>Pseudonim:</b>&nbsp &nbsp<input name="login" size="22"><nobr> <br>
+</TD>
+<TD width="300" >
+<center><font size="5" color="red"><b>Ulubiony srodek transportu:</b></font></center><br>
+<center> <select>
+<option value="autobus">Autobus</option>
+<option value="motocykl">Motocykl</option>
+<option value="samochod">Samochod</option>
+<option value="samolot">Samolot</option>
+<option value="rower">Rower</option>
+<option value="rolki">Rolki</option>
+</select> </center>
+</TD>
+<TD width="500">
+<nobr>Napisz swoje ulubione danie. Maks: 100<br>znakow</nobr>
+<br><br>
+<input name="inna" size="25" maxlength="100">
+</TD>
+</TR>
+<TR height="200">
+<TD><nobr>Czy lubisz chodzic do szkoly?</nobr>
+<br><br>
+<input type="radio" name="pyt3" value="nie"> Tak
+<br><br>
+<input type="radio" name="pyt3" value="nie ale"> Nie, ale udajemy ze tak
+<br><br>
+<input type="radio" name="pyt3" value="nie wiem"> Nie wiem <br> <br> </TD>
+<TD>podaj czas &nbsp &nbsp &nbsp &nbsp<input type="time"><br>
+podaj datę &nbsp &nbsp &nbsp&nbsp &nbsp<input type="date"> <br>
+<br> </TD>
+
+</TR>
+<TR height="100">
+
+<TD><nobr><input type="reset" value="Reset" style="height:80px; width:150px"> </TD>
+<TD> <input type="submit" value"=Wyślij formularz" style="height:80px; width:150px"> </TD>
+</TR>
+</TABLE>
+</form>
+  <A HREF= "index.html">wróć</A>
+</body>
 </html>
