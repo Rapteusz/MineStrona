@@ -1,62 +1,70 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pl-PL">
 <html>
 <head>
 <meta charset="utf-8">
-<title> FormularzAugustyniak </title>
+<title> ZADANIE FORMULARZ </title>
 </head>
-<body bgcolor="#E5F993">
-<center><h1> Formularz projekt</h1></center>
+<body bgcolor="#87CEFA">
+<p align="right"><h1> Formularz o.................zaproponowany przez nauczyciela</h1></p>
+<form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="Post">
 <TABLE>
 <TR height="100">
 <TD width="500">
-<b>Imie:</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<b>Imię</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie" size="22">
 <br><br>
-<b>Drugie imie:</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<b>Drugie imię</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 &nbsp &nbsp &nbsp &nbsp <input name="drugie" size="22">
 <br><br>
-<b>Nazwisko: </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="nazwisko" size="22">
+<b>Nazwisko </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="nazwisko" size="22">
 <br><br>
-<b>Pseudonim:</b>&nbsp &nbsp<input name="login" size="22"><nobr> <br>
+<b>Pseudonim artystyczny</b>&nbsp &nbsp<input name="login" size="22"><nobr>
+<br>
 </TD>
 <TD width="300" >
-<center><font size="5" color="red"><b>Ulubiony srodek transportu:</b></font></center><br>
+<center><font size="5" color="red"><b>Podaj środek lokomacji dojazdu do pracy</b></font></center><br>
 <center> <select>
 <option value="autobus">Autobus</option>
 <option value="motocykl">Motocykl</option>
-<option value="samochod">Samochod</option>
+<option value="prom">Prom</option>
 <option value="samolot">Samolot</option>
-<option value="rower">Rower</option>
-<option value="rolki">Rolki</option>
+<option value="lodz">Łódź podwodna</option>
+<option value="kajak">Kajak</option>
 </select> </center>
-</TD>
-<TD width="500">
-<nobr>Napisz swoje ulubione danie. Maks: 100<br>znakow</nobr>
+<TD width="500">Jaka jest Twoja ulubione ciastko?
+<br><br>
+<input type="checkbox" name="ciastko" value="k"> BEZA
+<br><br>
+<input type="checkbox" name="ciastko" value="m"> SERNIK
+<br><br>
+<input type="checkbox" name="ciastko" value="inna"> INNE
+<br><br><br>
+<nobr>Jeśli zaznaczyłeś INNE to podaj swoje ciastko<br>wpisz ciastko poniżej. Maks: 100<br>znaków</nobr>
 <br><br>
 <input name="inna" size="25" maxlength="100">
 </TD>
 </TR>
 <TR height="200">
-<TD><nobr>Czy lubisz chodzic do szkoly?</nobr>
+<TD><nobr>Czy umiesz programować?</nobr>
 <br><br>
-<input type="radio" name="pyt3" value="nie"> Tak
+<input type="radio" name="pyt3" value="tak"> Tak
 <br><br>
-<input type="radio" name="pyt3" value="nie ale"> Nie, ale udajemy ze tak
+<input type="radio" name="pyt3" value="nie"> Nie
 <br><br>
-<input type="radio" name="pyt3" value="nie wiem"> Nie wiem <br> <br> </TD>
+<input type="radio" name="pyt3" value="tak"> Nie wiem </TD>
 <TD>podaj czas &nbsp &nbsp &nbsp &nbsp<input type="time"><br>
 podaj datę &nbsp &nbsp &nbsp&nbsp &nbsp<input type="date"> <br>
-<br> </TD>
-
+wybierz kolor &nbsp &nbsp<input type="color"> <br> </TD>
+<TD> jaka jest wilgotność <input type="range"> <br>
+Proszę czekać...&nbsp &nbsp &nbsp &nbsp <progress>Proszę czekać...</progress> </TD>
 </TR>
 <TR height="100">
-
+<TD><button onclick="alert('A kuku')" style="height:80px;width:300px">Przycisk niespodzianka</button></TD>
 <TD><nobr><input type="reset" value="Reset" style="height:80px; width:150px"> </TD>
 <TD> <input type="submit" value"=Wyślij formularz" style="height:80px; width:150px"> </TD>
 </TR>
 </TABLE>
 </form>
-  <A HREF= "index.html">wróć</A>
 </body>
 </html>
