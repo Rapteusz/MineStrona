@@ -1,0 +1,54 @@
+body {
+    background-color: #EEEEEE;
+    font-family: Helvetica;
+}
+
+.strona {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo, .menu {
+    width: 100%;
+    background-color: LightBlue;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline;
+}
+
+.baner {
+    background-color: #DDDDDD;
+    height: 200px;
+}
+
+.główny {
+    color: Navy;
+    margin: 50px;
+    height: 400px;
+}
+
+.stopka {
+    text-align: right;
+    background-color: LightBlue;
+    padding: 10px;
+}
+
+button {
+    background-color: LightBlue;
+    color: Navy;
+    border: none;
+}
+
+.menu a {
+    color: Navy;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+.menu a:hover {
+    border: 1px solid Navy;
+}
