@@ -1,0 +1,19 @@
+f1 = open("instrukcje.txt","r")
+instrukcje = []
+licznik = 1
+maksi = 1
+for line in f1:
+  line = line.rstrip()
+  temp = line.split('')
+  instrukcje.append(temp[0])
+for i in range(0,len(instrukcje)):
+  if instrukcje[i - 1] == instrukcje[i]:
+    licznik+=1
+    if licznik > maksi:
+      maksi = licznik
+      rodzaj = instrukcje[i]
+  else:
+    licznik = 1
+print(instrukcje)
+print(maksi)
+print(rodzaj)
