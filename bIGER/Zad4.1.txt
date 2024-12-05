@@ -1,0 +1,34 @@
+with open("przyklad.txt", "r") as file:
+    line = file.readline().strip()
+
+    instrukcje = []
+    slowo = []
+
+    while line != "":
+        instrukcje.append(line.split(" "))
+        line = file.readline().strip()
+
+    print(instrukcje)
+
+
+    for element in instrukcje:
+        if element[0] == "DOPISZ":
+            slowo.append(element[1])
+        elif element[0] == "ZMIEN":
+            slowo.pop()
+            slowo.append(element[1])
+        elif element[0] == "USUN":
+            slowo.pop()
+        elif element[0] == "PRZESUN":
+            if element[1] in slowo:
+                index = slowo.index(element[1])
+                if slowo[index] == "Z":
+                    slowo[index] = "A"
+                else:
+                    slowo[index] = chr(ord(slowo[index])+1)
+
+    dlugosc = len(slowo)
+
+save = open("wyniki.txt", "w")
+save.write("Dlugosc slowa to: " + str(dlugosc))
+save.close()
